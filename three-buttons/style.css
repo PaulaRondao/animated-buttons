@@ -47,6 +47,7 @@ main {
 }
 
 /* ------------ second button ------------ */
+
 .original-button-two {
     display: flex;
     align-items: center;
@@ -93,6 +94,7 @@ main {
 
 
 /* ------------ third button ------------ */
+
 .original-button-three {
     display: flex;
     align-items: center;
