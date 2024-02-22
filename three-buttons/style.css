@@ -1,0 +1,118 @@
+header,
+main {
+    margin-bottom: 40px;
+}
+
+.original-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 0px;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+
+.original-button::before,
+.original-button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid #000000;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.original-button::before {
+    top: -2px;
+    left: -2px;
+}
+
+.original-button::after {
+    top: 2px;
+    left: 2px;
+}
+
+.original-button:hover::before,
+.original-button:hover::after {
+    top: 0;
+    left: 0;
+}
+
+/* ------------ second button ------------ */
+.original-button-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #144cff;
+    font-size: 18px;
+    border-radius: 0px;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.original-button-two::before,
+.original-button-two::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #144CFF;
+    transition: .3s;
+}
+
+.original-button-two {
+    top: 0;
+}
+
+.original-button-two::after {
+    bottom: 0;
+}
+
+.original-button-two:hover::before {
+    transform: translateX(-100%);
+}
+
+.original-button-two:hover::after {
+    transform: translateX(100%);
+}
+
+
+/* ------------ third button ------------ */
+.original-button-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    border-radius: 0px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid #333333;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+    background-color: #ffffff;
+}
+
+.original-button-three:hover {
+    box-shadow: 0 0 #333;
+    color: #fff;
+    background-color: #333;
+}
